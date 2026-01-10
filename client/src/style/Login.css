@@ -1,0 +1,128 @@
+.login-container {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 350px; /* Reduced max width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 0 auto; /* Center the container */
+  }
+  
+  .login-container h2 {
+    margin-bottom: 20px;
+    font-size: 1.6rem; /* Reduced font size */
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 13px; /* Reduced font size */
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 8px; /* Reduced padding */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 13px; /* Reduced font size */
+  }
+  
+  .form-group input:focus {
+    border-color: #19681c;
+    outline: none;
+  }
+  
+  .error {
+    color: red;
+    font-size: 11px; /* Reduced font size */
+    margin-top: 5px;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 13px; /* Adjusted font size */
+    margin-top: 10px;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    background-color: #19681c;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 15px; /* Slightly smaller font size */
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background-color: #145516;
+  }
+  
+  .register-link {
+    margin-top: 15px;
+    font-size: 13px; /* Adjusted font size */
+  }
+  
+  .register-link .link {
+    color: #19681c;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .login-container {
+      padding: 15px;
+      max-width: 90%; /* Make container width responsive */
+    }
+  
+    .form-group input {
+      padding: 8px;
+      font-size: 12px; /* Further reduce font size for smaller screens */
+    }
+  
+    .submit-btn {
+      font-size: 14px;
+    }
+  
+    .register-link {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .login-container {
+      padding: 10px;
+      max-width: 85%; /* Make container even smaller for mobile */
+    }
+  
+    .login-container h2 {
+      font-size: 1.4rem; /* Further reduce header font size */
+    }
+  
+    .form-group label {
+      font-size: 12px; /* Further reduce label font size */
+    }
+  
+    .form-group input {
+      padding: 6px;
+      font-size: 12px;
+    }
+  
+    .submit-btn {
+      font-size: 13px;
+      padding: 8px;
+    }
+  
+    .register-link {
+      font-size: 11px;
+    }
+  }
+  
