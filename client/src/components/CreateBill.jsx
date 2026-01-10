@@ -28,7 +28,7 @@ function NewBill() {
     }
 
     try {
-      await axios.post("http://localhost:5000/api/v1/create", formData);
+      await axios.post("https://golapsangha-backend.onrender.com/api/v1/create", formData);
       alert("Bill created successfully ✨");
       setFormData({ name: "", billed_amount: "", paid_amount: "", date1: "", date2: "", paid_or_not: "", billNo: "" });
     } catch (error) {
