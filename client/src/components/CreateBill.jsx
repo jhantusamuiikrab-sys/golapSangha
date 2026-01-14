@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 
-function NewBill() {
+function NewBill({baseUrl}) {
   const [formData, setFormData] = useState({
     name: "",
     billed_amount: "",
@@ -28,7 +28,7 @@ function NewBill() {
     }
 
     try {
-      await axios.post("https://golapsangha-backend.onrender.com/api/v1/create", formData);
+      await axios.post(`${baseUrl}/create`, formData);
       alert("Bill created successfully ✨");
       setFormData({ name: "", billed_amount: "", paid_amount: "", date1: "", date2: "", paid_or_not: "", billNo: "" });
     } catch (error) {
@@ -42,7 +42,7 @@ function NewBill() {
   const Required = () => <span className="text-red-500 ml-1">*</span>;
 
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center p-6 font-sans">
+    <div className="min-h-screen flex items-center justify-center p-6 mt-10 font-sans">
       <div className="bg-white w-full max-w-lg rounded-2xl shadow-2xl p-8 border border-gray-100">
         
         <header className="text-center mb-8">
@@ -96,7 +96,7 @@ function NewBill() {
 
           <button 
             type="submit" 
-            className="w-full mt-8 bg-green-600 hover:bg-green-700 text-white font-bold py-3 rounded-xl shadow-lg transition-all duration-300 transform hover:scale-[1.02] active:scale-95 flex items-center justify-center gap-2"
+            className="w-full mt-8 bg-emerald-600/95 hover:bg-green-700 text-white font-bold py-3 rounded-xl shadow-lg transition-all duration-300 transform hover:scale-[1.02] active:scale-95 flex items-center justify-center gap-2"
           >
             Generate Bill
           </button>
