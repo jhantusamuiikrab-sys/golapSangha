@@ -69,9 +69,9 @@ function BillsDashboard({ baseUrl }) {
         </div>
 
         {/* TABLE */}
-        <div className="overflow-x-auto">
-          <table className="min-w-full border border-gray-200">
-            <thead className="bg-emerald-600/95 text-white">
+        <div className="max-h-[500px] overflow-y-auto">
+          <table className="min-w-full border border-gray-200 overflow-x-auto">
+            <thead className="sticky bg-emerald-600/95 text-white top-0 z-10">
               <tr>
                 <th className="px-4 py-2 text-left">Bill No</th>
                 <th className="px-4 py-2 text-left">Name</th>

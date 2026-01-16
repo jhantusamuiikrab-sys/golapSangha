@@ -156,7 +156,7 @@ function UpdateBill({ baseUrl }) {
 
             <form onSubmit={handleSubmit} className="space-y-1">
               <label className={labelClass}>
-                Name <Required />
+                Name 
               </label>
               <input
                 name="name"
@@ -168,7 +168,7 @@ function UpdateBill({ baseUrl }) {
               />
 
               <label className={labelClass}>
-                Billed Amount <Required />
+                Billed Amount 
               </label>
               <input
                 type="number"
@@ -180,7 +180,7 @@ function UpdateBill({ baseUrl }) {
                 }
               />
 
-              <label className={labelClass}>Paid Amount</label>
+              <label className={labelClass}>Paid Amount<Required /></label>
               <input
                 type="number"
                 name="paid_amount"
@@ -192,7 +192,7 @@ function UpdateBill({ baseUrl }) {
               />
 
               <label className={labelClass}>
-                Bill Date <Required />
+                Bill Date 
               </label>
               <input
                 type="date"
@@ -204,7 +204,7 @@ function UpdateBill({ baseUrl }) {
                 }
               />
 
-              <label className={labelClass}>Due Date</label>
+              <label className={labelClass}>Due Date<Required /></label>
               <input
                 type="date"
                 name="date2"

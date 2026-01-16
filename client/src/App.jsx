@@ -7,7 +7,7 @@ import UpdateBill from "./components/UpdateBill";
 import Dashboard from "./components/dashboard/Dashboard";
 
 function App() {
-  const baseUrl = "https://golapsangha-backend.onrender.com/api/v1"; //"http://localhost:5000/api/v1"
+  const baseUrl ="https://golapsangha-backend.onrender.com/api/v1"; //"http://localhost:5000/api/v1"; 
   return (
     <>
       <Navbar />
